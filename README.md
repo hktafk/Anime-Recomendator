@@ -1,31 +1,23 @@
-Key Responsibilities and Achievements:
-
 Data Preprocessing:
 
-Cleaned and preprocessed an anime ratings dataset by handling missing values and encoding unique user and anime IDs into numerical indices.
+ •	Cleaned the dataset by replacing invalid ratings (e.g., -1) with NaN and dropping missing values.
 
-Utilized Python libraries such as Pandas and NumPy for efficient data manipulation.
+•	Encoded unique user and anime IDs into numerical indices for compatibility with the machine learning model.
 
-Model Design and Implementation:
+Model Design and Development:
 
-Designed a recommendation model in TensorFlow/Keras with separate embedding layers for users and anime.
+•	Designed a neural network model using TensorFlow and Keras with separate embedding layers for users and anime.
 
-Calculated the dot product of flattened user and anime embeddings to predict rating scores.
+•	Calculated the dot product of the flattened embedding vectors to predict user ratings.
 
-Compiled the model using the Adam optimizer and mean squared error loss.
+Training and Evaluation:
 
-Model Training and Evaluation:
+•	Split the data into training and testing sets using scikit-learn's train_test_split.
 
-Split the data into training and testing sets using scikit-learn’s train_test_split.
-
-Trained the model over multiple epochs, monitored performance with validation data, and achieved robust predictions.
-
-Evaluated model performance by computing Mean Squared Error (MSE) and Root Mean Squared Error (RMSE).
+•	Trained the model with the Adam optimizer and mean squared error (MSE) loss, and evaluated its performance using MSE and Root Mean Squared Error (RMSE).
 
 Recommendation Generation:
 
-Implemented a recommendation mechanism that filters out already rated anime and outputs the top 10 recommended anime IDs for a specific user.
+•	Implemented a recommendation algorithm that filters out anime already rated by a user and predicts ratings for the remaining anime.
 
-Technologies Used: Python, NumPy, Pandas, TensorFlow, Keras, scikit-learn
-
-Impact: This project demonstrates proficiency in data preprocessing, neural network design, and model evaluation. It showcases the practical application of deep learning techniques in building scalable recommendation systems that can be adapted for various domains.
+•	Extracted the top 10 anime with the highest predicted ratings as personalized recommendations. 
